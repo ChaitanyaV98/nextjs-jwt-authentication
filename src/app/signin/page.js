@@ -40,6 +40,13 @@ function Signin() {
         ))}
         <Button type="submit">Sign In</Button>
       </form>
+
+      <div className="mt-4">
+        <p>{`Don't have an account?`}</p>
+        <Button variant="outline" onClick={() => router.push("/signup")}>
+          Go to Signup
+        </Button>
+      </div>
     </div>
   );
 }
